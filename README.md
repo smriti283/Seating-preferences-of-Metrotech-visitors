@@ -14,7 +14,7 @@ Our hope is that by using the sensors available to us, we can quantitatively ide
 We decided to cconduct this study on the Lawrence St alleyway of the Metro Tech Plaza in Downtown Brooklyn. A 2016 New York Times and NYU Tandon collaboration provides clear evidence that the plaza receives different amounts of light in the springtime throughout the day (“Mapping the Shadows of New York City: Every Building, Every Block”). The Lawrence St. alleyway that we were able to study is mostly in shade throughout the Spring/Fall, but during approximately 10% of the day receives direct sunlight
 
 
-
+![Study](https://user-images.githubusercontent.com/78453405/218828955-2b99713d-2c91-47eb-b3dc-137c0566b4a2.png)
 
 
 ## Hypothesis
