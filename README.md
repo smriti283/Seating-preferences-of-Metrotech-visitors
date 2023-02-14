@@ -24,6 +24,11 @@ In the moderate spring weather, people will prefer to utilize seats and tables t
 
 ## Methodology
 
+1. Data Collection
+2. Data Processing - Video Imagery
+3. Data Processing - Temperature and Humidity
+4. Hypothesis Testing
+
 ### 1. Data Collection
 
 We recorded video imagery using a Samsung Galaxy S10 mobile phone (with 1080p video at 30 fps) from the northeast corner of the alleyway labeled in Figure 2a (adjacent to the Five Guys store). We found a relatively unobstructed view of both shaded and sunlit bench areas. Approximately 20 minutes of video data was captured on Wednesday, May 12, 2021 from 12:12 PM  to 12:32 PM.  
@@ -35,7 +40,7 @@ We recorded video imagery using a Samsung Galaxy S10 mobile phone (with 1080p vi
 For temperature and humidity, recordings were taken between 12pm and 12:39pm (EST) for between 7 and 9 minutes of each section (excluding transition time before and after each measurement period). This data was collected via a Raspberry Pi 3 (Model B+) and DHT11 Humidity Sensor to get readings of the seating locations in both the sunlit and shaded areas.
 
 
-### 2. Data Processing
+### 2. Data Processing - Video Imagery
 
 
 We used the Mobilenet-SSD Model to detect people and chairs in the video, and track the behavior of people in terms of their seating choices in sunlit and shaded areas. The Mobilenet-SSD model is a Single-Shot multibox Detection (SSD) network intended to perform object detection. This model is implemented using the Caffe framework. The model input is a blob that consists of a single resized image frame in BGR order. Thereafter, mean subtraction of given BGR values is performed to help combat illumination changes in the frame, before passing the image blob into the network. The model output is a typical vector containing the tracked object data. 
@@ -51,7 +56,32 @@ We made many adjustments and modifications to the script to suit the needs of ou
 Since the algorithm is trained to detect walking/standing people, detection of sitting people was a challenge. Because of this, we relied on manual counting to analyze the seating preferences of people. However, we recognize the need of an automated counter for more extensive study on the topic. To improve the performance of the counter, the algorithm must be trained on seated people for detection, which is a time-intensive and computationally expensive process.
 
 
+### 3. Data Processing - Temperature and Humidity
+
+
+The temperature and humidity data collected was logged and extracted as 22 distinct CSVs, representing each session of measurement via a Raspberry Pi 3 and corresponding sensors. Each CSV featured timestamps and measures for temperature and humidity every 2 seconds. Collation of these CSVs, data cleaning and visualization was completed in pandas and matplotlib in Jupyter notebooks with Python.
+
+
 ## Analysis and Results
 
 
+### Video Imagery
+
+Our video tracking results show that in the span of 20 minutes at midday on May 12, 2021, more than 200 people walked past the captured area. Out of them, two people decided to sit in the plaza. The first person was resting and the 2nd person sat for a meal.
+
+Both of them chose the sunlit side for sitting as opposed to the shaded side. A third person briefly proceeded towards the chairs but only to check his belongings and did not sit. However, he also chose the sunlit side for this purpose.
+
+The sunlit side was thus favored over the shaded side 100% of the time during the short span of collected data. 
+
+
+![mbnet ssd](https://user-images.githubusercontent.com/78453405/218831213-04c390aa-4d05-482a-a359-7850ba3de90b.png)
+
+
+### Temperature and Humidity
+
+We see noticeable differences between the directly lit and shaded seating areas in terms of temperature and humidity.
+
+
+
+While neither of these findings are novel discoveries, we were surprised to see such high variance between the two lighting types. Humidity is much lower in the sun, while temperature is much lower in the shade. This matches common sense about shade vs direct light, though the delta between the two is noteworthy. The difference of mean temperatures in either section was 4.3 degrees Celsius, which can represent a noticeable difference in human comfort.
 
