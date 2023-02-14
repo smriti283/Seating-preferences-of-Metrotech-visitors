@@ -81,6 +81,9 @@ The sunlit side was thus favored over the shaded side 100% of the time during th
 
 We see noticeable differences between the directly lit and shaded seating areas in terms of temperature and humidity.
 
+![temperature](https://user-images.githubusercontent.com/78453405/218834011-1fab12b9-b51c-440b-b8a9-d45fbe614e34.png) 
+*Temperature - Metro Tech Seating Locations*
+
 
 
 While neither of these findings are novel discoveries, we were surprised to see such high variance between the two lighting types. Humidity is much lower in the sun, while temperature is much lower in the shade. This matches common sense about shade vs direct light, though the delta between the two is noteworthy. The difference of mean temperatures in either section was 4.3 degrees Celsius, which can represent a noticeable difference in human comfort.
