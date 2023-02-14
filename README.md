@@ -16,6 +16,7 @@ We decided to cconduct this study on the Lawrence St alleyway of the Metro Tech 
 
 
 
+
 ## Hypothesis
 
 In the moderate spring weather, people will prefer to utilize seats and tables that are in directly-lit, warmer areas during the daytime compared to shaded areas. Using existing open data, we anticipate that the directly-sunlit part of the plaza will be more utilized than shaded counterparts.
