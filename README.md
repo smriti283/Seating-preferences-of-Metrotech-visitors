@@ -60,7 +60,7 @@ We made many adjustments and modifications to the script to suit the needs of ou
 Since the algorithm is trained to detect walking/standing people, detection of sitting people was a challenge. Because of this, we relied on manual counting to analyze the seating preferences of people. However, we recognize the need of an automated counter for more extensive study on the topic. To improve the performance of the counter, the algorithm must be trained on seated people for detection, which is a time-intensive and computationally expensive process.
 
 
-### Video Imagery Analysis
+#### Analysis
 
 Our video tracking results show that in the span of 20 minutes at midday on May 12, 2021, more than 200 people walked past the captured area. Out of them, two people decided to sit in the plaza. The first person was resting and the 2nd person sat for a meal.
 
@@ -78,15 +78,15 @@ The sunlit side was thus favored over the shaded side 100% of the time during th
 The temperature and humidity data collected was logged and extracted as 22 distinct CSVs, representing each session of measurement via a Raspberry Pi 3 and corresponding sensors. Each CSV featured timestamps and measures for temperature and humidity every 2 seconds. Collation of these CSVs, data cleaning and visualization was completed in pandas and matplotlib in Jupyter notebooks with Python.
 
 
-### Temperature and Humidity Analysis
+#### Analysis
 
 We see noticeable differences between the directly lit and shaded seating areas in terms of temperature and humidity.
 
-![temperature](https://user-images.githubusercontent.com/78453405/218834011-1fab12b9-b51c-440b-b8a9-d45fbe614e34.png) 
+![temperature](https://user-images.githubusercontent.com/78453405/218834011-1fab12b9-b51c-440b-b8a9-d45fbe614e34.png "Temperature Measurements - Sun (Blue) vs Shade (Orange)") 
 *Temperature Measurements - Sun (Blue) vs Shade (Orange)*
 
 
-![humidity](https://user-images.githubusercontent.com/78453405/218834497-61f2335a-e391-4876-8379-0f70f3a00e27.png) 
+![humidity](https://user-images.githubusercontent.com/78453405/218834497-61f2335a-e391-4876-8379-0f70f3a00e27.png "Humidity Measurements - Sun (Blue) vs Shade (Orange)") 
 *Humidity Measurements - Sun (Blue) vs Shade (Orange)*
 
 
