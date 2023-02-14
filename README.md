@@ -11,6 +11,10 @@ Though the pandemic looks to be calmer in 2021 than 2020, people are still gathe
 
 Our hope is that by using the sensors available to us, we can quantitatively identify why some seating areas in MetroTech Plaza are preferable to others - and then generalize these takeaways for the city to take advantage of across the 5 boroughs.
 
+We decided to cconduct this study on the Lawrence St alleyway of the Metro Tech Plaza in Downtown Brooklyn. A 2016 New York Times and NYU Tandon collaboration provides clear evidence that the plaza receives different amounts of light in the springtime throughout the day (“Mapping the Shadows of New York City: Every Building, Every Block”). The Lawrence St. alleyway that we were able to study is mostly in shade throughout the Spring/Fall, but during approximately 10% of the day receives direct sunlight
+
+
+
 
 ## Hypothesis
 
