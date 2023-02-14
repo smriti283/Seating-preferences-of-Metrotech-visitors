@@ -82,7 +82,13 @@ The sunlit side was thus favored over the shaded side 100% of the time during th
 We see noticeable differences between the directly lit and shaded seating areas in terms of temperature and humidity.
 
 ![temperature](https://user-images.githubusercontent.com/78453405/218834011-1fab12b9-b51c-440b-b8a9-d45fbe614e34.png) 
-*Temperature - Metro Tech Seating Locations*
+
+*Temperature Measurements - Sun (Blue) vs Shade (Orange)*
+
+
+![humidity](https://user-images.githubusercontent.com/78453405/218834497-61f2335a-e391-4876-8379-0f70f3a00e27.png)
+
+*Humidity Measurements - Sun (Blue) vs Shade (Orange)*
 
 
 
